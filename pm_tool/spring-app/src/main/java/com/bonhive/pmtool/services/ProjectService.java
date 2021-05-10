@@ -31,4 +31,9 @@ public class ProjectService {
 
         return projects;
     }
+
+    public Project findByProjectShortName(String shortName){
+        Project project = projectRepository.findByProjectShortName(shortName);
+        return project;
+    }
 }

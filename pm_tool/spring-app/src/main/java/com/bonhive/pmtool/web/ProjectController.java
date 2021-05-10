@@ -28,4 +28,10 @@ public class ProjectController {
         ResponseEntity<List<Project>> projectsResponse = new ResponseEntity<List<Project>>(projects, HttpStatus.OK);
         return projectsResponse;
     }
+
+    @GetMapping("/project/{shortName}")
+    public ResponseEntity<Project> getProjectByShortName(@PathVariable String shortName){
+        Project project = projectService.findByProjectShortName(shortName);
+        return new ResponseEntity<Project>(project, HttpStatus.OK);
+    }
 }
