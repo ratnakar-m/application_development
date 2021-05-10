@@ -1,6 +1,11 @@
 package com.bonhive.pmtool.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
 @Entity
@@ -9,10 +14,17 @@ public class Project {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @NotBlank
     private String projectName;
+    @Size(min=4, max=5)
+    @Column(updatable = false, unique = true)
     private String projectShortName;
+    @NotBlank(message = "Project description is required")
     private String description;
+    @JsonFormat(pattern = "dd-mm-yyyy")
     private Date startDate;
+    @JsonFormat(pattern = "dd-mm-yyyy")
     private Date endDate;
 
     private Date createdAt;
