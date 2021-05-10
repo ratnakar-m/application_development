@@ -19,7 +19,7 @@ public class Project {
     private String projectName;
     @Size(min=4, max=5)
     @Column(updatable = false, unique = true)
-    private String projectShortName;
+    private String projectCode;
     @NotBlank(message = "Project description is required")
     private String description;
     @JsonFormat(pattern = "dd-mm-yyyy")
@@ -49,12 +49,12 @@ public class Project {
         this.projectName = projectName;
     }
 
-    public String getProjectShortName() {
-        return projectShortName;
+    public String getProjectcode() {
+        return projectCode;
     }
 
-    public void setProjectShortName(String projectShortName) {
-        this.projectShortName = projectShortName;
+    public void setProjectCode(String projectShortName) {
+        this.projectCode = projectShortName;
     }
 
     public String getDescription() {

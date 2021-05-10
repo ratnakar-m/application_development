@@ -1,6 +1,7 @@
 package com.bonhive.pmtool.services;
 
 import com.bonhive.pmtool.domain.Project;
+import com.bonhive.pmtool.exceptions.ProjectCodeException;
 import com.bonhive.pmtool.repositories.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -32,8 +33,17 @@ public class ProjectService {
         return projects;
     }
 
-    public Project findByProjectShortName(String shortName){
-        Project project = projectRepository.findByProjectShortName(shortName);
+    public Project findByProjectCode(String projectCode){
+        Project project = projectRepository.findByProjectCode(projectCode);
         return project;
+    }
+
+    public void deleteByProjectCode(String projectCode){
+        Project project = projectRepository.findByProjectCode(projectCode.toUpperCase());
+
+        if(project == null){
+            throw new ProjectCodeException("Cannot Project with code '"+projectCode+"'. This project does not exist");
+        }
+        projectRepository.delete(project);
     }
 }
