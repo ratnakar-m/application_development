@@ -1,0 +1,46 @@
+
+ 
+Learning Java - Name, StartDate, EndDate
+	- Data types - 
+	- Constructs - 
+	- Collection - 
+	- Exception - 
+	- Threads - 
+	- IO - 
+	- Networking - 3
+	- Annotations
+	
+House Construction - 1 year
+	- Approval - 1 month
+	- Design - 1 month
+	- Material Procurement
+	- Resources Mgmt- Architect, Mason, Plumber, Electricial, Engineers, Painter, Carpenter
+	- Foundation
+	- Frameworks - slabs and pillars
+	- Walls
+	- Bathrooms
+	
+Univeristy Application
+	- GRE, TOEFL, IELTS
+	- Research on Universities
+	- SOP
+	- Recommendations
+	- Applicaions
+	- Admission
+	- Visa
+	
+Tour
+	- finalizing people
+	- Location
+	- Booking
+	- Travel
+	- 
+	
+Job Trials
+	- Learn the skills
+	- simple protoype project
+	- Communicaions
+	- Be in touch Network
+	- Interviews
+	- Re-learn & introspect where you can improve
+	

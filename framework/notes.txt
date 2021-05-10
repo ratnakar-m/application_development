@@ -1,9 +1,17 @@
+inheritenace => Swift is a Car
+composition => Swift has a engine
+
+create engine object
+create wheels obects
+wire the engine and wheels to the Swift
+
+Engine engine = new Engine();
+
 class Car{
 	int n;
 	Engine engine;
 	List<Wheel> wheels;
 	Transmission transmission;
-	
 }
 
 class Engine{
@@ -23,11 +31,21 @@ class Engine{
 		this.power = power;
 	}
 	
+	public void setNumCylinders(int numCylinders){
+		this.numCylinders = numCylinders;
+	}
+	
+	public void setCC(int cc){
+		this.cc = cc;
+	}
+	
+	public void setPower(float power){
+		this.power = power;
+	}
+	
 }
 
-inheritenace
-	Swift is a Car
-	Swift has a engine
+
 	
 class Wheel{
 	boolean isTubeless;
@@ -77,6 +95,3 @@ class Demo{
 }
 
 
-create engine object
-create wheels obects
-wire the engine and wheels to the Swift
