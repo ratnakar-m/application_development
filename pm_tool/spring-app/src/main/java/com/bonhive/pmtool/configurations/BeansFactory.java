@@ -6,6 +6,7 @@ import com.bonhive.pmtool.demo.Swift;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.mongodb.core.MongoClientFactoryBean;
 
 @Configuration
 public class BeansFactory {
@@ -22,4 +23,7 @@ public class BeansFactory {
         else
             return new Etios();
     }
+
+
+
 }
