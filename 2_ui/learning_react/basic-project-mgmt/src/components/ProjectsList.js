@@ -10,6 +10,12 @@ const ProjectsList = () => {
         <li>
           Project 2
         </li>
+        <li>
+          Project 3
+        </li>
+        <li>
+          Project 4
+        </li>
       </ul>
     </div>
   );

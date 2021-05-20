@@ -47,3 +47,17 @@
     margin: 1rem auto;    
     
   }
+
+  .button:hover {
+    background-color: #9c1458;
+    border-color: #9c1458;
+  }
+  
+  .button--alt {
+    background-color: transparent;
+    color: #800040;
+  }
+  
+  .button--alt:hover {
+    background-color: #f8dae9;
+  }
