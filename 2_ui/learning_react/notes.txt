@@ -1,0 +1,13 @@
+
+
+click (human action)-> 
+eventhandler -> 
+change state (setValue) -> 
+React component gets re-evaluated (re-rendered) -> 
+calls useEffect after re-evaluation depending on the depending states list
+
+
+useEffect(()=>{}, [])  //empty dependencies implies called only once after first time evalaution
+
+
+useEffect(()=>{}) //no dependencies param implies called every time after component evalaution (rendering)
